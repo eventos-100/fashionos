@@ -1,14 +1,15 @@
-import { HomeView } from 'src/sections/_home/view/home-view';
+import { CONFIG } from 'src/global-config';
+
+import { FashionLandingView } from 'src/sections/_fashion/view/fashion-landing-view';
 
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Zone UI: The starting point for your next project',
-  description:
-    'The ZONE is built on top of MUI, a powerful library that provides flexible, customizable, and easy-to-use components.',
-  keywords: 'react,material,kit,application,dashboard,admin,template',
+  title: `Fashion Events | ${CONFIG.appName}`,
+  description: 'Discover exclusive fashion events, runway shows, and designer collections worldwide.',
+  keywords: 'fashion,events,runway,shows,designers,collections,fashion week',
 };
 
 export default function Page() {
-  return <HomeView />;
+  return <FashionLandingView />;
 }
